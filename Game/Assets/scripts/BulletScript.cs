@@ -28,7 +28,7 @@ public class BulletScript : MonoBehaviour
     {
         Rigidbody2D bPrefab = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as Rigidbody2D; //Maakt nieuwe bullet van bulletPrefab, quaternion.identity = geen rotatie, is perfect gelijk aan de wereld
 
-        bPrefab.AddForce(Vector2 * 500); //Zet snelheid naar rechts naar 500
+        bPrefab.AddForce(Vector2.right * 500); //Zet snelheid naar rechts naar 500
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
