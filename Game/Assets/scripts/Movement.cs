@@ -5,13 +5,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
 	public float XVelocity;
-	public float YVelocity;
+	float YVelocity;
 	Rigidbody2D r2d2;
 	// Start is called before the first frame update
 	void Start()
     {
 		XVelocity = 5;
-		YVelocity = 5;
+		YVelocity = 7;
 		r2d2 = GetComponent<Rigidbody2D>();
 	}
 
@@ -24,7 +24,11 @@ public class Movement : MonoBehaviour
 	{
 		if (Input.GetKey("w"))
 		{
-			r2d2.AddForce(transform.up * YVelocity);
+			r2d2.AddForce(transform.up * (YVelocity * 50) * Time.deltaTime);
+		};
+		if (Input.GetKey("s"))
+		{
+			r2d2.AddForce(transform.up * -(YVelocity * 50) * Time.deltaTime);
 		}
 	}
 }
