@@ -6,23 +6,25 @@ public class Movement : MonoBehaviour
 {
 	public float XVelocity;
 	public float YVelocity;
-    // Start is called before the first frame update
-    void Start()
+	Rigidbody2D r2d2;
+	// Start is called before the first frame update
+	void Start()
     {
 		XVelocity = 5;
 		YVelocity = 5;
-    }
+		r2d2 = GetComponent<Rigidbody2D>();
+	}
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+		
+	}
 	private void FixedUpdate()
 	{
-		if (Input.GetKey("W"))
+		if (Input.GetKey("w"))
 		{
-			transform.Translate(Vector3.up * (YVelocity + 10) * Time.deltaTime);
+			r2d2.AddForce(transform.up * YVelocity);
 		}
 	}
 }
