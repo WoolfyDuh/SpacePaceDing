@@ -213,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 732103183}
   - component: {fileID: 732103182}
+  - component: {fileID: 732103184}
   m_Layer: 0
   m_Name: Enemy_charger
   m_TagString: Enemy
@@ -282,6 +283,78 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &732103184
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732103181}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.84, y: 2.15}
+    newSize: {x: 0.84, y: 2.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.07, y: -1.035}
+      - {x: 0.099999994, y: -1.045}
+      - {x: 0.16, y: -1.045}
+      - {x: 0.19, y: -0.98499995}
+      - {x: 0.21, y: -0.825}
+      - {x: 0.12, y: -0.685}
+      - {x: 0.16, y: -0.66499996}
+      - {x: 0.17999999, y: -0.525}
+      - {x: 0.13, y: -0.42499998}
+      - {x: 0.08, y: -0.355}
+      - {x: 0.17999999, y: -0.265}
+      - {x: 0.29, y: -0.24499999}
+      - {x: 0.34, y: -0.205}
+      - {x: 0.39999998, y: -0.074999996}
+      - {x: 0.41, y: 0.024999999}
+      - {x: 0.41, y: 0.105}
+      - {x: 0.28, y: 0.205}
+      - {x: 0.34, y: 0.295}
+      - {x: 0.34, y: 0.49499997}
+      - {x: 0.31, y: 0.625}
+      - {x: 0.28, y: 0.685}
+      - {x: 0.02, y: 1.0749999}
+      - {x: -0.06, y: 1.0749999}
+      - {x: -0.32, y: 0.685}
+      - {x: -0.35, y: 0.615}
+      - {x: -0.38, y: 0.49499997}
+      - {x: -0.39, y: 0.345}
+      - {x: -0.39, y: 0.285}
+      - {x: -0.26, y: 0.175}
+      - {x: -0.35, y: 0.024999999}
+      - {x: -0.37, y: -0.114999995}
+      - {x: -0.35999998, y: -0.16499999}
+      - {x: -0.29999998, y: -0.265}
+      - {x: -0.29, y: -0.375}
+      - {x: -0.29, y: -0.49499997}
+      - {x: -0.14, y: -0.72499996}
+      - {x: -0.16, y: -0.78499997}
+      - {x: -0.13, y: -1.025}
+      - {x: -0.08, y: -1.045}
+      - {x: -0.03, y: -1.045}
+      - {x: 0, y: -0.965}
+      - {x: 0.03, y: -0.78499997}
+      - {x: 0.08, y: -0.865}
+    - - {x: 0.08, y: -0.055}
+      - {x: 0.07, y: -0.035}
+      - {x: 0.049999997, y: -0.055}
+      - {x: 0.06, y: -0.065}
 --- !u!1 &835303964
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,6 +367,7 @@ GameObject:
   - component: {fileID: 835303965}
   - component: {fileID: 835303968}
   - component: {fileID: 835303969}
+  - component: {fileID: 835303970}
   - component: {fileID: 835303967}
   m_Layer: 8
   m_Name: Ship
@@ -480,6 +554,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   XVelocity: 5
+--- !u!114 &835303970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835303964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91aec585978d9d746808629c5c0cf976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 6382494696443291942, guid: 91784c7539c152a48b4e29916760b88f,
+    type: 3}
 --- !u!1 &887453179
 GameObject:
   m_ObjectHideFlags: 0
