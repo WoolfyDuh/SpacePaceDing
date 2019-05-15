@@ -33,11 +33,11 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey("s"))
         {
-            r2d2.AddForce(transform.up * -(YVelocity * 50) * Time.deltaTime);
+            r2d2.AddForce(transform.up * (YVelocity * 50) * Time.deltaTime);
         }
         if (Input.GetKey("d"))
         {
-            transform.Rotate(Vector3.forward * (YVelocity * 3) * Time.deltaTime);
+            transform.Rotate(Vector3.forward * -(YVelocity * 3) * Time.deltaTime);
         }
         if (Input.GetKey("a"))
         {

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using *;
 
 public class AsteroidTranjections : MonoBehaviour
 {
-	Random Ra;
+	public GameObject prefab;
+	Random random = new Random();
+	//int RandomNumber = random.Next(1);
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,6 @@ public class AsteroidTranjections : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //if (Ra(0,100) > 10)
     }
 }
