@@ -32,7 +32,11 @@ public class Movement : MonoBehaviour
 		}
 		if (Input.GetKey("d"))
 		{
-			transform.right = XVelocity;
+		 transform.Rotate(Vector3.forward * (YVelocity * 3) * Time.deltaTime);
+		}
+		if (Input.GetKey("a"))
+		{
+		 transform.Rotate(Vector3.forward * -(YVelocity * 3) * Time.deltaTime);
 		}
 	}
 }
