@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class ShootScript : MonoBehaviour
 {
-    public Rigidbody2D bulletPrefab;
+    private bool allowfire;
+    public GameObject bulletPrefab;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space)) //Als spatiebalk is ingedrukt
+        allowfire = true;
+    }
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        if (Input.GetKeyUp(KeyCode.Space) && allowfire) //Als spatiebalk is ingedrukt
         {
             BulletAttack();
         }
-
     }
 
-    void BulletAttack()
+    IEnumerator BulletAttack()
     {
-      Rigidbody2D bPrefab = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as Rigidbody2D; //Maakt nieuwe bullet van bulletPrefab, quaternion.identity = geen rotatie, is perfect gelijk aan de wereld
-
-      bPrefab.AddForce(Vector2.up * 500); //Zet snelheid naar rechts naar 500
-      Physics2D.IgnoreLayerCollision(8, 9);
+        allowfire = false;
+        GameObject bPrefab = Object.Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject; //Maakt nieuwe bullet van bulletPrefab, quaternion.identity = geen rotatie, is perfect gelijk aan de wereld
+        yield return new WaitForSeconds(1);
+        allowfire = true;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Physics2D.IgnoreLayerCollision(8, 9);
     }
 }
