@@ -30,5 +30,9 @@ public class Movement : MonoBehaviour
 		{
 			r2d2.AddForce(transform.up * -(YVelocity * 50) * Time.deltaTime);
 		}
+		if (Input.GetKey("d"))
+		{
+			transform.right = XVelocity;
+		}
 	}
 }
