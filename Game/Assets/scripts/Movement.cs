@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
 		}
 		if (Input.GetKey("d"))
 		{
-			transform.right = XVelocity;
+			//transform.right = YVelocity;
 		}
 	}
 }
