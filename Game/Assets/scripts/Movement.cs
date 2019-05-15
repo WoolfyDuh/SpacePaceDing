@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+	int Lives;
     public float XVelocity;
     float YVelocity;
 	Vector2 HeldVelocity;
     Rigidbody2D r2d2;
     // Start is called before the first frame update
     void Start()
-    {	
+    {
+		Lives = 3;
         XVelocity = 5;
         YVelocity = 7;
         r2d2 = GetComponent<Rigidbody2D>();
@@ -42,4 +44,12 @@ public class Movement : MonoBehaviour
             transform.Rotate(Vector3.forward * -(YVelocity * 3) * Time.deltaTime);
         }
     }
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.collider.tag == "enemy")
+		{
+			r2d2.velocity = Vector3.zero;
+	
+		}
+	}
 }
