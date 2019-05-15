@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+	
     }
     private void FixedUpdate()
     {
@@ -49,7 +49,11 @@ public class Movement : MonoBehaviour
 		if (collision.collider.tag == "enemy")
 		{
 			r2d2.velocity = Vector3.zero;
-	
+			while (Lives > 0)
+			{
+				Lives--;
+				Debug.Log(Lives);
+			}
 		}
 	}
 }
