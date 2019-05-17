@@ -22,6 +22,11 @@ public class BulletScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+            Destroy(this.gameObject);
+        }
         Physics2D.IgnoreLayerCollision(8, 9);
     }
 }
