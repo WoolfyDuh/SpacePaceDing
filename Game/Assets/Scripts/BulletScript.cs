@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-   
     [SerializeField]
     private float speed = 0.5f;
     private Rigidbody2D rb;
@@ -19,10 +18,7 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up*speed);
-        //transform.position = Vector2.MoveTowards(transform.position, transform.position, speed * Time.deltaTime);
-
-        
+        transform.Translate(transform.up * speed);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
