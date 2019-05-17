@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ShootScript : MonoBehaviour
 {
-    private bool allowfire;
     public GameObject bulletPrefab;
 
     private void Start()
