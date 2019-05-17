@@ -26,6 +26,6 @@ public class ShootScript : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Physics2D.IgnoreLayerCollision(8, 9);
+        Physics2D.IgnoreLayerCollision(8, 9); // Negeert collision tussen layer 8 (Speler) en layer 9 (Bullets), hierdoor heeft je kogel geen effect op de speler
     }
 }
