@@ -33,7 +33,7 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey("s"))
         {
-            r2d2.AddForce(transform.up * (YVelocity * 50) * Time.deltaTime);
+            r2d2.AddForce(transform.up * -(YVelocity * 50) * Time.deltaTime);
         }
         if (Input.GetKey("d"))
         {
@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey("a"))
         {
-            transform.Rotate(Vector3.forward * -(YVelocity * 3) * Time.deltaTime);
+            transform.Rotate(Vector3.forward * (YVelocity * 3) * Time.deltaTime);
         }
     }
 	private void OnCollisionEnter(Collision collision)
