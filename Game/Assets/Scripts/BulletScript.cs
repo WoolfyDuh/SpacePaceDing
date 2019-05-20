@@ -32,6 +32,7 @@ public class BulletScript : MonoBehaviour
     {
         if(col.gameObject.tag =="Enemy")
         {
+            Destroy(col.gameObject);
             Destroy(gameObject);
             Debug.Log("Hit!");
         }

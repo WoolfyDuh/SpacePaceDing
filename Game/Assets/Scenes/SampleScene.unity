@@ -313,7 +313,8 @@ GameObject:
   - component: {fileID: 732103183}
   - component: {fileID: 732103182}
   - component: {fileID: 732103184}
-  m_Layer: 11
+  - component: {fileID: 732103185}
+  m_Layer: 0
   m_Name: Enemy_charger
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -455,6 +456,19 @@ PolygonCollider2D:
       - {x: 0.07, y: -0.035}
       - {x: 0.049999997, y: -0.055}
       - {x: 0.06, y: -0.065}
+--- !u!114 &732103185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732103181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20daba2929e42e641bdb9a62f9d3ed32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 835303964}
 --- !u!1 &835303964
 GameObject:
   m_ObjectHideFlags: 0
