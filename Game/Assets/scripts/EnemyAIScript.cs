@@ -10,7 +10,7 @@ public class EnemyAIScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		speed = 50;
+		speed = 4;
 		startPos = transform.position;
 		if (!Player)
 		{
