@@ -30,7 +30,6 @@ public class Movement : MonoBehaviour
         {
             r2d2.AddForce(transform.up * (YVelocity * 50) * Time.deltaTime);
 			HeldVelocity = r2d2.velocity;
-			Debug.Log(r2d2.velocity);
         }
         if (Input.GetKey("s"))
 		{//MOVEMENT BACKWARD

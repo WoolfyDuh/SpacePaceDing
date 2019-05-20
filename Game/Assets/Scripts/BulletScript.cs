@@ -27,13 +27,14 @@ public class BulletScript : MonoBehaviour
     {
         transform.position = transform.position + moveDirection * speed;
     }
-        void OnCollisionEnter2D(Collision2D collision)
-        {
-        if (collision.gameObject.CompareTag("Enemy"))
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag =="Enemy")
         {
             Destroy(gameObject);
-            Destroy(this.gameObject);
+            Debug.Log("Hit!");
         }
         Physics2D.IgnoreLayerCollision(8, 9);
-        }
+    }
 }

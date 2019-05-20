@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 732103183}
   - component: {fileID: 732103182}
   - component: {fileID: 732103184}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy_charger
   m_TagString: Enemy
   m_Icon: {fileID: 0}
