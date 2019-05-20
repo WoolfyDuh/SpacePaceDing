@@ -5,10 +5,8 @@ using UnityEngine;
 public class ShootScript : MonoBehaviour
 {
     public GameObject bulletPrefab;
-
     private void Start()
     {
-    
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -21,7 +19,7 @@ public class ShootScript : MonoBehaviour
 
     void BulletAttack()
     {
-        GameObject bPrefab = Object.Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject; //Maakt nieuwe bullet van bulletPrefab, quaternion.identity = geen rotatie, is perfect gelijk aan de wereld
+        GameObject bPrefab = Object.Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject; //Maakt nieuwe bullet van bulletPrefab, quaternion.identity = geen rotatie, is perfect gelijk aan de wereld 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
