@@ -18,4 +18,12 @@ public class AsteroidTranjections : MonoBehaviour
     {
         //if (Ra(0,100) > 10)
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+
+        }
+    }
 }
