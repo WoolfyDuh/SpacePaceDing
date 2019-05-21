@@ -44,16 +44,11 @@ public class Movement : MonoBehaviour
 			transform.Rotate(Vector3.forward * (YVelocity * 3) * Time.deltaTime);
         }
     }
-	private void OnCollisionEnter(Collision collision)
+	private void OnCollisionEnter2D(Collision collision)
 	{
 		if (collision.collider.tag == "enemy")
-		{ //DIT HOORT DE SHIT TE STOPPEN ALS DIE EEN ENEMY AANRACKT
-			r2d2.velocity = Vector3.zero;
-			while (Lives > 0)
-			{
-				Lives--;
-				Debug.Log(Lives);
-			}
+		{ 
+
 		}
 	}
 }
