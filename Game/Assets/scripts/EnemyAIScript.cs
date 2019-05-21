@@ -25,11 +25,12 @@ public class EnemyAIScript : MonoBehaviour
     }
 	public void OnCollisionEnter(Collision collision)
 	{
-		
-		if (collision.gameObject.name == "Player")
-		{
 
-			transform.position = startPos;
+			if (collision.gameObject.tag == "Player")
+			{
+				Destroy(collision.gameObject);
+				Destroy(gameObject);
+				Debug.Log("Hit!");
+			}
 		}
 	}
-}
