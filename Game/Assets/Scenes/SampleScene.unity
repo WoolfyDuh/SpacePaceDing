@@ -163,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.062
+      value: -5.001
       objectReference: {fileID: 0}
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
@@ -218,7 +218,7 @@ PrefabInstance:
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0404086
+      value: 0.99150944
       objectReference: {fileID: 0}
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
@@ -558,8 +558,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20daba2929e42e641bdb9a62f9d3ed32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   Player: {fileID: 835303964}
 --- !u!1 &835303964
 GameObject:
@@ -755,8 +755,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38b44d783e2761a4a9ea7e424b052c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   XVelocity: 10
 --- !u!114 &835303970
 MonoBehaviour:
@@ -768,8 +768,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91aec585978d9d746808629c5c0cf976, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   bulletPrefab: {fileID: 2575571668816452914, guid: 91784c7539c152a48b4e29916760b88f,
     type: 3}
 --- !u!1 &887453179

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ASSteroidSpawnScript : MonoBehaviour
 {
+	 //position = Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10));
 	public GameObject asteroid;
 
 	// Start is called before the first frame update
