@@ -135,12 +135,12 @@ PrefabInstance:
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.076472
+      value: -5.062
       objectReference: {fileID: 0}
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.61
+      value: 8.721
       objectReference: {fileID: 0}
     - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
@@ -187,6 +187,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0404086
+      objectReference: {fileID: 0}
+    - target: {fileID: 4225504752154928204, guid: 55c0156e3e8c8c44dbdb60880d163c89,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0566618
+      objectReference: {fileID: 0}
     - target: {fileID: 4225504752154928178, guid: 55c0156e3e8c8c44dbdb60880d163c89,
         type: 3}
       propertyPath: m_SortingLayerID
@@ -217,8 +227,74 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4225504752154928205, guid: 55c0156e3e8c8c44dbdb60880d163c89, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 55c0156e3e8c8c44dbdb60880d163c89, type: 3}
+--- !u!1 &261851007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4225504752154928179, guid: 55c0156e3e8c8c44dbdb60880d163c89,
+    type: 3}
+  m_PrefabInstance: {fileID: 248434038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &261851008
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261851007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.5, y: 2.5}
+    newSize: {x: 8, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.87, y: -0.42999998}
+      - {x: 0.97999996, y: -0.24}
+      - {x: 0.97999996, y: 0.02}
+      - {x: 0.96, y: 0.14999999}
+      - {x: 0.89, y: 0.22}
+      - {x: 0.82, y: 0.42}
+      - {x: 0.77, y: 0.53}
+      - {x: 0.58, y: 0.76}
+      - {x: 0.48, y: 0.79999995}
+      - {x: 0.26999998, y: 0.82}
+      - {x: 0.21, y: 0.83}
+      - {x: 0, y: 0.83}
+      - {x: -0.25, y: 0.82}
+      - {x: -0.32999998, y: 0.78999996}
+      - {x: -0.47, y: 0.71999997}
+      - {x: -0.59, y: 0.69}
+      - {x: -0.7, y: 0.59}
+      - {x: -0.79999995, y: 0.55}
+      - {x: -0.85999995, y: 0.48}
+      - {x: -0.90999997, y: 0.35}
+      - {x: -0.93, y: 0.29999998}
+      - {x: -0.95, y: 0.19}
+      - {x: -0.95, y: -0.08}
+      - {x: -0.87, y: -0.22}
+      - {x: -0.77, y: -0.38}
+      - {x: -0.75, y: -0.47}
+      - {x: -0.66999996, y: -0.59999996}
+      - {x: -0.59999996, y: -0.65999997}
+      - {x: -0.31, y: -0.89}
+      - {x: -0.14999999, y: -0.95}
+      - {x: 0.099999994, y: -0.95}
+      - {x: 0.26, y: -0.9}
+      - {x: 0.34, y: -0.87}
+      - {x: 0.74, y: -0.63}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
