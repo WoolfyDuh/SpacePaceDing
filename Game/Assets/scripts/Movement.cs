@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     private int Lives;
-    public float XVelocity;
-    float YVelocity;
+    private float XVelocity;
+    private float YVelocity;
     Vector2 HeldVelocity;
     Rigidbody2D r2d2;
     private Vector2 spawnpos;
@@ -54,7 +54,6 @@ public class Movement : MonoBehaviour
             if (Lives > 0)
             {
                 Lives--;
-                Debug.Log(Lives);
             }
             else if (Lives <= 0){
                 StartCoroutine(LoadYourAsyncScene());

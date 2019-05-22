@@ -30,11 +30,14 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        if(col.gameObject.tag == "Border")
+        {
+            Destroy(this.gameObject);
+        }
         if(col.gameObject.tag ==  "Enemy")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
-            Debug.Log("Hit!");
         }
         Physics2D.IgnoreLayerCollision(8, 9);
     }
