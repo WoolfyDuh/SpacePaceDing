@@ -173,7 +173,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.306787
+  orthographic size: 26.313034
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -279,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 732103181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.89, y: 9.41, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 2.6, y: 2.6, z: 1.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -591,7 +591,6 @@ GameObject:
   - component: {fileID: 835303968}
   - component: {fileID: 835303970}
   - component: {fileID: 835303967}
-  - component: {fileID: 835303969}
   - component: {fileID: 835303972}
   m_Layer: 8
   m_Name: Ship
@@ -657,7 +656,7 @@ Transform:
   m_GameObject: {fileID: 835303964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3, y: 2.3, z: 1}
   m_Children:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
@@ -763,18 +762,6 @@ PolygonCollider2D:
       - {x: 0.29999998, y: -0.71}
       - {x: 0.55, y: -0.64}
       - {x: 0.52, y: -0.7}
---- !u!114 &835303969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835303964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b44d783e2761a4a9ea7e424b052c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &835303970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -889,8 +876,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887453179}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42, y: -0.73, z: 0}
-  m_LocalScale: {x: 16.547329, y: 8.96724, z: 1}
+  m_LocalPosition: {x: -1.9, y: -10.4, z: 0}
+  m_LocalScale: {x: 35, y: 35, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
