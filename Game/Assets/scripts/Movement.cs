@@ -39,11 +39,11 @@ public class Movement : MonoBehaviour
         }
         if (Input.GetKey("d"))
         { //MOVEMENT LEFT
-            transform.Rotate(Vector3.forward * -(YVelocity * 3) * Time.deltaTime);
+            transform.Rotate(Vector3.forward * -(XVelocity * 3) * Time.deltaTime);
         }
         if (Input.GetKey("a"))
         {   //MOVEMENT RIGHTO
-            transform.Rotate(Vector3.forward * (YVelocity * 3) * Time.deltaTime);
+            transform.Rotate(Vector3.forward * (XVelocity * 3) * Time.deltaTime);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
