@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     private int Lives;
-    public float XVelocity;
+    float XVelocity;
     float YVelocity;
     Vector2 HeldVelocity;
     Rigidbody2D r2d2;
