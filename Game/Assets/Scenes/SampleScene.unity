@@ -367,8 +367,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20daba2929e42e641bdb9a62f9d3ed32, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   Player: {fileID: 835303964}
 --- !u!1001 &763860491
 PrefabInstance:
@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 835303968}
   - component: {fileID: 835303970}
   - component: {fileID: 835303967}
-  - component: {fileID: 835303971}
+  - component: {fileID: 835303969}
   m_Layer: 8
   m_Name: Ship
   m_TagString: Player
@@ -634,7 +634,7 @@ PolygonCollider2D:
       - {x: 0.29999998, y: -0.71}
       - {x: 0.55, y: -0.64}
       - {x: 0.52, y: -0.7}
---- !u!114 &835303970
+--- !u!114 &835303969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -644,9 +644,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38b44d783e2761a4a9ea7e424b052c85, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  XVelocity: 10
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XVelocity: 0
 --- !u!114 &835303970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,8 +657,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 91aec585978d9d746808629c5c0cf976, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2575571668816452914, guid: 91784c7539c152a48b4e29916760b88f,
     type: 3}
 --- !u!114 &835303971
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e7a1063b07bd864f93270d558087cee, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   asteroid: {fileID: 4225504752154928179, guid: 55c0156e3e8c8c44dbdb60880d163c89,
     type: 3}
 --- !u!1 &887453179
