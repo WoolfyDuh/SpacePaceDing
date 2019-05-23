@@ -22,6 +22,7 @@ public class EnemyAIScript : MonoBehaviour
     void Update()
     {
 		transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
+		//transform.rotation = Vector3.RotateTowards(transform.position,Player,90 *Time.deltaTime,90);
     }
 	public void OnCollisionEnter(Collision collision)
 	{
