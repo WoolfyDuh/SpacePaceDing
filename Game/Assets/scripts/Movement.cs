@@ -16,8 +16,8 @@ public class Movement : MonoBehaviour
     {
         spawnpos = transform.position;
         Lives = 3;	   //DIT IS ONZE LEVENS BOI
-        XVelocity = 10; //DIT IS ONZE ROTATION BOI
-        YVelocity = 7; //DIT IS ONZE MOVEMENT BOI
+        XVelocity = 20; //DIT IS ONZE ROTATION BOI
+        YVelocity = 25; //DIT IS ONZE MOVEMENT BOI
         r2d2 = GetComponent<Rigidbody2D>(); //DIT IS ONZE RIGIDBOI
     }
 
