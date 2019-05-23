@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-    private int Lives;
-    private float XVelocity;
-    private float YVelocity;
+    [SerializeField] private int Lives;
+    [SerializeField] private float XVelocity;
+    [SerializeField] private float YVelocity;
     Vector2 HeldVelocity;
     Rigidbody2D r2d2;
-    private Vector2 spawnpos;
+    [SerializeField] private Vector2 spawnpos;
     // Start is called before the first frame update
     void Start()
     {
