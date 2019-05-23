@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-    private int Lives;
-    private float XVelocity;
-    private float YVelocity;
+    [SerializeField] private int Lives;
+    [SerializeField] private float XVelocity;
+    [SerializeField] private float YVelocity;
     Vector2 HeldVelocity;
     Rigidbody2D r2d2;
-    private Vector2 spawnpos;
+    [SerializeField] private Vector2 spawnpos;
     // Start is called before the first frame update
     void Start()
     {
         spawnpos = transform.position;
         Lives = 3;	   //DIT IS ONZE LEVENS BOI
-        XVelocity = 10; //DIT IS ONZE ROTATION BOI
-        YVelocity = 11; //DIT IS ONZE MOVEMENT BOI
+        XVelocity = 20; //DIT IS ONZE ROTATION BOI
+        YVelocity = 25; //DIT IS ONZE MOVEMENT BOI
         r2d2 = GetComponent<Rigidbody2D>(); //DIT IS ONZE RIGIDBOI
     }
 

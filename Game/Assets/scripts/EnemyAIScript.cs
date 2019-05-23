@@ -4,34 +4,36 @@ using UnityEngine;
 
 public class EnemyAIScript : MonoBehaviour
 {
-	private Vector3 startPos;
-	public GameObject Player;
-	private float speed;
+    private Vector3 startPos;
+    private GameObject Player;
+    private float speed;
+    public Transform target;
     // Start is called before the first frame update
     void Start()
     {
-		speed = 4;
-		startPos = transform.position;
-		if (!Player)
-		{
-			Player = GameObject.Find("Player");
-		}
+        Player = GameObject.FindGameObjectWithTag("Player");
+        speed = 4;
+        startPos = transform.position;
+        if (!Player)
+        {
+            Player = GameObject.Find("Player");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-		transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
-		//transform.rotation = Vector3.RotateTowards(transform.position,Player,90 *Time.deltaTime,90);
+        transform.up = target.position - transform.position;
+        transform.position = Vector3.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
     }
-	public void OnCollisionEnter(Collision collision)
-	{
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
 
-			if (collision.gameObject.tag == "Player")
-			{
-				Destroy(collision.gameObject);
-				Destroy(gameObject);
-				Debug.Log("Hit!");
-			}
-		}
-	}
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+            Debug.Log("Hit!");
+        }
+    }
+}
