@@ -5,25 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
-    private int Lives;
-    private float XVelocity;
-    private float YVelocity;
+    [SerializeField] private int Lives;
+    [SerializeField] private float XVelocity;
+    [SerializeField] private float YVelocity;
     Vector2 HeldVelocity;
     Rigidbody2D r2d2;
-    private Vector2 spawnpos;
+    [SerializeField] private Vector2 spawnpos;
     // Start is called before the first frame update
     void Start()
     {
         spawnpos = transform.position;
         Lives = 3;	   //DIT IS ONZE LEVENS BOI
-        XVelocity = 10; //DIT IS ONZE ROTATION BOI
-        YVelocity = 7; //DIT IS ONZE MOVEMENT BOI
+        XVelocity = 20; //DIT IS ONZE ROTATION BOI
+        YVelocity = 25; //DIT IS ONZE MOVEMENT BOI
         r2d2 = GetComponent<Rigidbody2D>(); //DIT IS ONZE RIGIDBOI
     }
 
     // Update is called once per frame
     void Update()
     {
+
     }
     private void FixedUpdate()
     {
@@ -68,19 +69,19 @@ public class Movement : MonoBehaviour
     {
         transform.position = spawnpos;
     }
-    IEnumerator LoadYourAsyncScene()
-    {
-        // The Application loads the Scene in the background as the current Scene runs.
-        // This is particularly good for creating loading screens.
-        // You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
-        // a sceneBuildIndex of 1 as shown in Build Settings.
+	IEnumerator LoadYourAsyncScene()
+	{
+		// The Application loads the Scene in the background as the current Scene runs.
+		// This is particularly good for creating loading screens.
+		// You could also load the Scene by using sceneBuildIndex. In this case Scene2 has
+		// a sceneBuildIndex of 1 as shown in Build Settings.
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("End Screen");
+		AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("End Screen");
 
-        // Wait until the asynchronous scene fully loads
-        while (!asyncLoad.isDone)
-        {
-            yield return null;
-        }
-    }
+		// Wait until the asynchronous scene fully loads
+		while (!asyncLoad.isDone)
+		{
+			yield return null;
+		}
+	}
 }
