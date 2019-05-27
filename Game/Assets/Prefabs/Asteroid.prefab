@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4225504752154928204}
-  - component: {fileID: 4225504752154928207}
   - component: {fileID: 3877198485509513995}
   - component: {fileID: 7147217070427095811}
+  - component: {fileID: 4225504752154928207}
   m_Layer: 10
   m_Name: Asteroid
   m_TagString: Asteroid
@@ -33,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4225504752154928207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4225504752154928179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f60b0f0c4f51d74db2ff4cba61ccb85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 4225504752154928179}
 --- !u!212 &3877198485509513995
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -153,3 +140,16 @@ PolygonCollider2D:
       - {x: 0.26, y: -0.9}
       - {x: 0.34, y: -0.87}
       - {x: 0.74, y: -0.63}
+--- !u!114 &4225504752154928207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4225504752154928179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f60b0f0c4f51d74db2ff4cba61ccb85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 4225504752154928179}

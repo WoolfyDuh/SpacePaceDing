@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     {
         spawnpos = transform.position;
         Lives = 3;	   //DIT IS ONZE LEVENS BOI
-        XVelocity = 20; //DIT IS ONZE ROTATION BOI
+        XVelocity = 100; //DIT IS ONZE ROTATION BOI
         YVelocity = 25; //DIT IS ONZE MOVEMENT BOI
         r2d2 = GetComponent<Rigidbody2D>(); //DIT IS ONZE RIGIDBOI
     }
@@ -32,7 +32,6 @@ public class Movement : MonoBehaviour
         if (Input.GetKey("w"))
         {
             r2d2.AddForce(transform.up * (YVelocity * 50) * Time.deltaTime);
-            HeldVelocity = r2d2.velocity;
         }
         if (Input.GetKey("s"))
         {//MOVEMENT BACKWARD

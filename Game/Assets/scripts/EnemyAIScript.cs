@@ -33,6 +33,10 @@ public class EnemyAIScript : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            Destroy(this.gameObject);
             Debug.Log("Hit!");
         }
     }
