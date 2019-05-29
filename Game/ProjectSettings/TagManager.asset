@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Firepoint
   - Border
+  - EnemyBullet
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - Bullet
   - Asteroid
   - Enemy
-  - 
+  - BulletEnemy
   - 
   - 
   - 
